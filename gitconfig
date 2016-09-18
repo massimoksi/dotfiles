@@ -1,0 +1,38 @@
+[user]
+	name = Massimo Peri
+	email = massimoperi@gmail.com
+[core]
+	autocrlf = input
+	excludesfile = /Users/massimo/.gitignore
+[color]
+	branch = auto
+	status = auto
+	diff = auto
+	interactive = auto
+[credential]
+	helper = osxkeychain
+[push]
+	default = simple
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[alias]
+	graph = log --graph --pretty=oneline --abbrev-commit
+	last = log -1 HEAD
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/massimo/.stCommitMsg

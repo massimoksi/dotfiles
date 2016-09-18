@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+((!$#)) && echo Please, specify the number of the last commits to edit. && exit 1
+
+git rebase -i HEAD~$1

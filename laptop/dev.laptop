@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+brew_install_or_upgrade 'git-flow'
+brew_install_or_upgrade 'hub'
+brew_install_or_upgrade 'git-extras'
+brew_install_or_upgrade 'carthage'
+brew_install_or_upgrade 'xctool'
+brew_install_or_upgrade 'cloc'
+brew_install_or_upgrade 'swiftlint'
+brew_install_or_upgrade 'sourcekitten'
+
+gem_install_or_update 'cocoapods'
+gem_install_or_update 'cocoapods-clean'
+gem_install_or_update 'jazzy'
+gem_install_or_update 'synx'
+gem_install_or_update 'fastlane'
