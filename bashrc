@@ -3,7 +3,7 @@
 ###############################################################################
 
 export GEM_HOME=$HOME/.gem
-export PATH=$PATH:$HOME/.scripts:$GEM_HOME/bin
+export PATH=$PATH:$HOME/.bin:$GEM_HOME/bin
 
 ###############################################################################
 # EDITOR                                                                      #

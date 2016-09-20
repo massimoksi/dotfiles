@@ -21,3 +21,10 @@ for f in *; do
 done
 
 echo -e "\n${RES} configuration file(s) installed."
+
+BIN_PATH=$HOME/.bin
+if [ ! -d $BIN_PATH ]; then
+    mkdir $BIN_PATH
+fi
+curl -o $HOME/.bin/mac https://raw.githubusercontent.com/massimoksi/laptop/master/mac
+chmod +x $BIN_PATH/mac
