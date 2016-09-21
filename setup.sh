@@ -22,9 +22,13 @@ done
 
 echo -e "\n${RES} configuration file(s) installed."
 
+# Create ~/.bin directory.
 BIN_PATH=$HOME/.bin
 if [ ! -d $BIN_PATH ]; then
     mkdir $BIN_PATH
+    echo -e "\n${BIN_PATH} created."
 fi
+
+# Download laptop and make it executable.
 curl -o $HOME/.bin/mac https://raw.githubusercontent.com/massimoksi/laptop/master/mac
 chmod +x $BIN_PATH/mac
